@@ -1,0 +1,29 @@
+[33mcommit 883661554c7a0833395823e718f4f6e012dc4d04[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Petrut <ivanoiu.petrut27@yahoo.com>
+Date:   Tue May 10 09:55:10 2022 +0300
+
+    added the color scheme file
+
+[33mcommit bba2c129e515529ffcdfdaf1b5f46c74d3c0e4ed[m
+Author: Petrut <ivanoiu.petrut27@yahoo.com>
+Date:   Mon May 9 22:14:28 2022 +0300
+
+    added html body content and semantics
+
+[33mcommit fd63fcaed84626a64b33fd5b59a5b2b74360dadc[m
+Author: Petrut <ivanoiu.petrut27@yahoo.com>
+Date:   Mon May 9 22:13:21 2022 +0300
+
+    added photos
+
+[33mcommit 46c2a36f5582c3bbef7c431feeb29c47a525e011[m
+Author: Petrut <ivanoiu.petrut27@yahoo.com>
+Date:   Mon May 9 20:31:04 2022 +0300
+
+    added base files
+
+[33mcommit caf9e2c4318cf05c16f049099dbb60ed83ca6372[m
+Author: Petrut <ivanoiu.petrut27@yahoo.com>
+Date:   Mon May 9 20:30:41 2022 +0300
+
+    added gitignore
