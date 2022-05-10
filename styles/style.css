@@ -16,6 +16,43 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+}
+
+/* COLORS */
+
+:root {
+  --gray1: #323234;
+  --gray2: #202023;
+  --gray3: #1a202c; /* has more blue in it */
+
+  --white1: #ededed;
+  --white2: #f6f0e8;
+  --white3: #f0e7db;
+
+  --blue: #0091f1;
+  --darker-blue: #056cb1;
+
+  --green: #95f388;
+  --darker-green: #07a384;
+}
+
+.dark {
+  --bg: var(--gray2);
+  --bg-lighter: var(--gray1);
+  --text: var(--white1);
+  --primary: var(--blue);
+  --accent: var(--green);
+}
+
+.light {
+  --bg: var(--white3);
+  --bg-lighter: var(--white2);
+  --text: var(--gray3);
+  --primary: var(--darker-blue);
+  --accent: var(--darker-green);
 }
 
 /* GENERAL */
@@ -53,7 +90,7 @@ body {
   padding: 1.6rem 11.2rem;
   margin-bottom: 11.2rem;
 
-  background-color: brown;
+  background-color: var(--bg-lighter);
 }
 
 .logo {
@@ -88,8 +125,6 @@ body {
   gap: 6.4rem;
   place-items: center;
   padding: 0 6.4rem;
-
-  background-color: turquoise;
 }
 
 .hero__img img {
@@ -105,7 +140,7 @@ body {
   padding: 0.4rem 2.5rem;
   margin-bottom: 0.6rem;
   border-radius: 9px;
-  background-color: chartreuse;
+  background-color: var(--bg-lighter);
 }
 
 .primary--heading {
