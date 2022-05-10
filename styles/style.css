@@ -8,6 +8,10 @@
   /* border: 1px solid coral; */
 }
 
+img {
+  display: block;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -30,7 +34,7 @@ body {
 
   --white1: #ededed;
   --white2: #f6f0e8;
-  --white3: #f0e7db;
+  --white3: #9a938b;
 
   --blue: #0091f1;
   --darker-blue: #056cb1;
@@ -43,6 +47,7 @@ body {
   --bg: var(--gray2);
   --bg-lighter: var(--gray1);
   --text: var(--white1);
+  --text-secondary: var(--white3);
   --primary: var(--blue);
   --accent: var(--green);
 }
@@ -51,6 +56,7 @@ body {
   --bg: var(--white3);
   --bg-lighter: var(--white2);
   --text: var(--gray3);
+  --text-secondary: var(--gray1);
   --primary: var(--darker-blue);
   --accent: var(--darker-green);
 }
@@ -136,7 +142,7 @@ body {
 
 .hero__tittle {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 0.4rem 2.5rem;
   margin-bottom: 0.6rem;
   border-radius: 9px;
@@ -144,11 +150,17 @@ body {
 }
 
 .primary--heading {
-  font-size: 4.8rem;
+  font-size: 6.1rem;
   font-weight: bold;
   margin-bottom: 4.8rem;
   line-height: 1.5;
   letter-spacing: 1.5px;
+}
+
+.secondary--heading {
+  font-size: 2.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 3.2rem;
 }
 
 .sub-title {
@@ -159,10 +171,61 @@ body {
 
 .hero__description {
   width: 70%;
+  font-size: 2rem;
 }
 
 /* BLOB ANIMATION */
 .blob {
   visibility: hidden;
   fill: #0091f1;
+}
+
+/* SKILLSA SECTION */
+
+.skills {
+  padding: 0 6.4rem;
+}
+
+.heading--tertiary {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--bg-lighter);
+  width: 60%;
+  padding: 2.5rem 3.2rem;
+
+  border-radius: 9px;
+}
+
+.skills__item img {
+  width: 12.8rem;
+  height: 12.8rem;
+  border-radius: 9px;
+  margin-bottom: 1.6rem;
+}
+
+.skills__item:nth-child(1) {
+  place-self: end;
+}
+
+.skills__item:nth-child(2) {
+  place-self: center;
+}
+
+.skills__text {
+  color: var(--text-secondary);
+  text-align: center;
 }
