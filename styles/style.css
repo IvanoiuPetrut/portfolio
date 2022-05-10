@@ -160,3 +160,9 @@ body {
 .hero__description {
   width: 70%;
 }
+
+/* BLOB ANIMATION */
+.blob {
+  visibility: hidden;
+  fill: #0091f1;
+}
