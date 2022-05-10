@@ -172,6 +172,7 @@ body {
 .hero__description {
   width: 70%;
   font-size: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 /* BLOB ANIMATION */
@@ -228,4 +229,45 @@ body {
 .skills__text {
   color: var(--text-secondary);
   text-align: center;
+}
+
+/* WORKS */
+
+.work__item {
+  display: grid;
+  grid-template-columns: 25fr 75fr;
+  gap: 3.2rem;
+}
+
+.work__img img {
+  width: 100%;
+}
+
+.work__details {
+  padding: 0.8rem;
+}
+
+.work__text {
+  margin-bottom: 1.6rem;
+}
+
+.lnk--full:link,
+.lnk--full:visited {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--bg);
+  background-color: var(--primary);
+  padding: 0.6rem 2.4rem;
+  border-radius: 7px;
+
+  margin-right: 1.6rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.lnk--full:hover,
+.lnk--full:active {
+  color: var(--primary);
+  background-color: var(--bg);
+  box-shadow: 0px 0px 0px 0.2rem var(--primary);
 }
