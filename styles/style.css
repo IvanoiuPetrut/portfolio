@@ -36,7 +36,8 @@ body {
   --white2: #f6f0e8;
   --white3: #9a938b;
 
-  --blue: #0091f1;
+  /* #003E43 */
+  --blue: #b3ecbb;
   --darker-blue: #056cb1;
 
   --green: #95f388;
@@ -63,11 +64,18 @@ body {
 
 /* GENERAL */
 
+.margin-btm--big {
+  margin-bottom: 16rem;
+}
+
+.color--primary {
+  color: var(--primary);
+}
+
 .container {
   max-width: 144rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  margin-bottom: 11.2rem;
 }
 
 .list {
@@ -126,11 +134,14 @@ body {
 /* HERO SECTION */
 
 .hero {
+  padding: 0 6.4rem;
+}
+
+.hero__wrapper {
   display: grid;
   grid-template-columns: 60fr 40fr;
   gap: 6.4rem;
   place-items: center;
-  padding: 0 6.4rem;
 }
 
 .hero__img img {
@@ -158,9 +169,22 @@ body {
 }
 
 .secondary--heading {
-  font-size: 2.5rem;
-  color: var(--text-secondary);
-  margin-bottom: 3.2rem;
+  display: inline-block;
+  font-size: 3.9rem;
+  margin-bottom: 6.4rem;
+
+  position: relative;
+}
+
+.secondary--heading::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--text-secondary);
+
+  position: absolute;
+  left: 0;
+  bottom: 5px;
 }
 
 .sub-title {
@@ -170,6 +194,7 @@ body {
 }
 
 .hero__description {
+  color: var(--text-secondary);
   width: 70%;
   font-size: 2rem;
   margin-bottom: 3.2rem;
@@ -184,11 +209,12 @@ body {
 /* SKILLSA SECTION */
 
 .skills {
-  padding: 0 6.4rem;
+  padding: 12.8rem 6.4rem;
+  background-color: var(--bg-lighter);
 }
 
 .heading--tertiary {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.6rem;
 }
@@ -204,16 +230,22 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background-color: var(--bg-lighter);
+  background-color: var(--bg);
   width: 60%;
-  padding: 2.5rem 3.2rem;
-
+  padding: 4.8rem 3.2rem;
   border-radius: 9px;
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s linear;
+}
+
+.skills__item:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 .skills__item img {
-  width: 12.8rem;
-  height: 12.8rem;
+  width: 15.2rem;
+  height: 15.2rem;
   border-radius: 9px;
   margin-bottom: 1.6rem;
 }
