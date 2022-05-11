@@ -23,6 +23,8 @@ body {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+
+  position: relative;
 }
 
 /* COLORS */
@@ -34,7 +36,7 @@ body {
 
   --white1: #ededed;
   --white2: #f6f0e8;
-  --white3: #f0e7db;
+  --white3: #817e7b;
 
   /* #003E43 */
   --blue: #b3ecbb;
@@ -347,4 +349,26 @@ body {
   font-size: 6.1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* coppyright */
+
+.coppyright {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  background-color: var(--bg-lighter);
+  color: var(--text-secondary);
+  width: 100%;
+  padding: 1.6rem 0;
+
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
 }
