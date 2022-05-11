@@ -36,27 +36,32 @@ body {
 
   --white1: #ededed;
   --white2: #f6f0e8;
-  --white3: #817e7b;
+  --white3: #f0e7db;
+  --white4: #aca7a3;
 
-  /* #003E43 */
-  --blue: #b3ecbb;
+  /* dark */
+  --green: #b3ecbb;
   --darker-blue: #056cb1;
+  --green-trans: rgba(7, 163, 132, 0.4);
 
-  --green: #95f388;
+  /* ligh */
   --darker-green: #07a384;
+  --green-trans: rgba(7, 163, 132, 0.4);
 
   /* theme */
-  --light-theme: 
-  --dark-theme: 
+  --light-theme: #ffde82;
+  --dark-theme: #9990d0;
 }
 
 .dark {
   --bg: var(--gray2);
   --bg-lighter: var(--gray1);
+  --bg-trans: var(--green-trans);
   --text: var(--white1);
-  --text-secondary: var(--white3);
-  --primary: var(--blue);
+  --text-secondary: var(--white4);
+  --primary: var(--green);
   --accent: var(--green);
+  --theme-color: var(--light-theme);
 }
 
 .light {
@@ -64,11 +69,18 @@ body {
   --bg-lighter: var(--white2);
   --text: var(--gray3);
   --text-secondary: var(--gray1);
-  --primary: var(--darker-blue);
+  --primary: var(--darker-green);
   --accent: var(--darker-green);
+  --theme-color: var(--dark-theme);
 }
 
 /* GENERAL */
+
+.bg--secondary-color {
+  border-radius: 9px;
+  background-color: var(--bg-lighter);
+  padding: 0.4rem 2.5rem;
+}
 
 .inverse-order {
   order: 1;
@@ -143,7 +155,7 @@ body {
 
 .lnk--nav:hover,
 .lnk--nav:active {
-  box-shadow: inset 150px 0 0 0 #07a38471;
+  box-shadow: inset 150px 0 0 0 var(--green-trans);
   color: var(--primary);
   /* text-decoration: underline; */
 }
@@ -158,8 +170,11 @@ body {
   display: none;
 }
 
+.icon--theme[name="moon"] {
+}
+
 .btn--nav {
-  background-color: yellow;
+  background-color: var(--theme-color);
   padding: 1.2rem;
   border-radius: 9px;
 }
@@ -189,10 +204,7 @@ body {
 .hero__tittle {
   display: inline-block;
   font-size: 2.5rem;
-  padding: 0.4rem 2.5rem;
   margin-bottom: 0.6rem;
-  border-radius: 9px;
-  background-color: var(--bg-lighter);
 }
 
 .primary--heading {
@@ -229,6 +241,7 @@ body {
 }
 
 .heading--tertiary {
+  display: inline-block;
   font-size: 3.1rem;
   font-weight: bold;
   margin-bottom: 1.6rem;
@@ -372,11 +385,6 @@ body {
   font-size: 2rem;
   margin-bottom: 0.8rem;
   letter-spacing: 1px;
-
-  padding: 0.4rem 2.5rem;
-  margin-bottom: 0.6rem;
-  border-radius: 9px;
-  background-color: var(--bg-lighter);
 }
 
 .footer__subtitle {
