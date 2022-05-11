@@ -44,6 +44,10 @@ body {
 
   --green: #95f388;
   --darker-green: #07a384;
+
+  /* theme */
+  --light-theme: 
+  --dark-theme: 
 }
 
 .dark {
@@ -144,9 +148,20 @@ body {
   /* text-decoration: underline; */
 }
 
+.icon--theme {
+  width: 2rem;
+  height: 2rem;
+  color: var(--bg-lighter);
+}
+
+.icon--theme[name="sunny"] {
+  display: none;
+}
+
 .btn--nav {
-  font-size: 2rem;
-  font-weight: bold;
+  background-color: yellow;
+  padding: 1.2rem;
+  border-radius: 9px;
 }
 
 /* MAIN */
