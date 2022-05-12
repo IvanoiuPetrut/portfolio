@@ -308,7 +308,11 @@ body {
 /* BLOB ANIMATION */
 .blob {
   /* visibility: hidden; */
-  fill: #0091f1;
+  fill: var(--primary);
+}
+
+.blob {
+  background-image: url(../resources/photo_of_me.jpg);
 }
 
 /* SKILLSA SECTION */
