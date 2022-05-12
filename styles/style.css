@@ -148,7 +148,8 @@ body {
 
 .lnk--nav:link,
 .lnk--nav:visited {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   text-decoration: none;
   padding: 0.2rem 1.2rem;
   border-radius: 9px;
@@ -243,6 +244,7 @@ body {
 .hero__tittle {
   display: inline-block;
   font-size: 2.5rem;
+  font-weight: 500;
   margin-bottom: 0.6rem;
 }
 
@@ -255,8 +257,9 @@ body {
 }
 
 .secondary--heading {
-  display: inline-block;
   font-size: 3.9rem;
+  font-weight: 500;
+  display: inline-block;
   margin-bottom: 6.4rem;
 
   position: relative;
@@ -293,9 +296,10 @@ body {
 }
 
 .hero__description {
+  font-size: 2rem;
+  font-weight: 400;
   color: var(--text-secondary);
   width: 70%;
-  font-size: 2rem;
   margin-bottom: 3.2rem;
 }
 
@@ -388,8 +392,11 @@ body {
 
 .lnk--full:link,
 .lnk--full:visited {
+  display: flex;
+  align-items: center;
+
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--bg);
   background-color: var(--primary);
   padding: 0.6rem 2.4rem;
