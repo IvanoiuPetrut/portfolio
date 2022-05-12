@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
   background-color: var(--bg);
   color: var(--text);
-  transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 
   position: relative;
 }
@@ -46,11 +46,13 @@ body {
 
   /* ligh */
   --darker-green: #07a384;
-  --green-trans: rgba(7, 163, 132, 0.4);
+  --green-trans: rgba(7, 163, 132, 0.2);
 
   /* theme */
   --light-theme: #ffde82;
+  --light-theme-secondary: #bb9655;
   --dark-theme: #9990d0;
+  --dark-theme-secondary: #6e5ba0;
 }
 
 .dark {
@@ -62,6 +64,7 @@ body {
   --primary: var(--green);
   --accent: var(--green);
   --theme-color: var(--light-theme);
+  --theme-color-secondary: var(--light-theme-secondary);
 }
 
 .light {
@@ -72,6 +75,7 @@ body {
   --primary: var(--darker-green);
   --accent: var(--darker-green);
   --theme-color: var(--dark-theme);
+  --theme-color-secondary: var(--dark-theme-secondary);
 }
 
 /* GENERAL */
@@ -123,7 +127,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 11.2rem;
+  padding: 0.8rem 11.2rem;
   margin-bottom: 11.2rem;
 
   background-color: var(--bg-lighter);
@@ -145,20 +149,39 @@ body {
 .lnk--nav:link,
 .lnk--nav:visited {
   font-size: 2rem;
-  /* font-weight: 500; */
   text-decoration: none;
-  padding: 0.6rem 1.6rem;
+  padding: 0.2rem 1.2rem;
   border-radius: 9px;
+  transition: all 0.4s ease-in-out, color 0.3s ease-in-out;
 
-  transition: box-shadow 0.4s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
 }
 
 .lnk--nav:hover,
 .lnk--nav:active {
-  box-shadow: inset 150px 0 0 0 var(--green-trans);
+  /* box-shadow: inset 100px 0 0 0 var(--green-trans); */
   color: var(--primary);
-  /* text-decoration: underline; */
 }
+
+.lnk--nav:link::before,
+.lnk--nav:active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--bg-trans);
+  border-radius: 9px;
+  transition: all 0.3s ease-in-out;
+}
+
+.lnk--nav:hover::before,
+.lnk--nav:hover::before {
+  width: 100%;
+}
+
+/* THEME BUTTON */
 
 .icon--theme {
   width: 2rem;
@@ -166,17 +189,33 @@ body {
   color: var(--bg-lighter);
 }
 
-.icon--theme[name="sunny"] {
+.light .icon--theme[name="sunny"] {
   display: none;
 }
 
-.icon--theme[name="moon"] {
+.light .icon--theme[name="moon"] {
+  display: block;
+}
+
+.dark .icon--theme[name="moon"] {
+  display: none;
+}
+
+.dark .icon--theme[name="sunny"] {
+  display: block;
 }
 
 .btn--nav {
   background-color: var(--theme-color);
   padding: 1.2rem;
   border-radius: 9px;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.btn--nav:hover,
+.btn--nav:active {
+  background-color: var(--theme-color-secondary);
 }
 
 /* MAIN */
