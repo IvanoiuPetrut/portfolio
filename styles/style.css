@@ -165,7 +165,7 @@ body {
 }
 
 .lnk--nav:link::before,
-.lnk--nav:active::before {
+.lnk--nav:visited::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -178,7 +178,7 @@ body {
 }
 
 .lnk--nav:hover::before,
-.lnk--nav:hover::before {
+.lnk--nav:active::before {
   width: 100%;
 }
 
@@ -392,9 +392,6 @@ body {
 
 .lnk--full:link,
 .lnk--full:visited {
-  display: flex;
-  align-items: center;
-
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--bg);
@@ -404,13 +401,33 @@ body {
   margin-right: 1.6rem;
 
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .lnk--full:hover,
 .lnk--full:active {
+  background-color: transparent;
   color: var(--primary);
+  /* color: var(--primary);
   background-color: var(--bg);
-  box-shadow: 0px 0px 0px 0.2rem var(--primary);
+  box-shadow: 0px 0px 0px 0.2rem var(--primary); */
+}
+
+.lnk--full:link::before,
+.lnk--full:visited::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  /* background-color: crimson; */
+  border-radius: 7px;
+}
+
+.lnk--full:hover::before,
+.lnk--full:active::before {
+  width: 100%;
 }
 
 /* FOOTER */
