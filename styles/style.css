@@ -238,6 +238,7 @@ body {
 
 .hero__img img {
   width: 100%;
+  display: none;
 }
 
 .hero__content {
@@ -306,13 +307,14 @@ body {
 }
 
 /* BLOB ANIMATION */
-.blob {
-  /* visibility: hidden; */
-  fill: var(--primary);
+.hero__img {
+  width: 100%;
 }
 
 .blob {
-  background-image: url(../resources/photo_of_me.jpg);
+  /* visibility: hidden; */
+  width: 100%;
+  fill: var(--primary);
 }
 
 /* SKILLSA SECTION */
