@@ -182,8 +182,8 @@ body {
 }
 
 .logo {
-  width: 3.2rem;
   height: 3.2rem;
+  width: auto;
 }
 
 /* NAV */
@@ -510,7 +510,6 @@ body {
 }
 
 .footer__row-1 {
-  background-color: #056cb1;
   place-self: end;
   width: 60%;
 }
