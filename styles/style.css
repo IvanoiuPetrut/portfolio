@@ -187,6 +187,11 @@ body {
   width: auto;
 }
 
+.light .logo,
+.light .footer__logo {
+  content: url("/resources/logo-light.png");
+}
+
 .sticky .header {
   position: fixed;
   top: 0;
