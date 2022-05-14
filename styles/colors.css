@@ -1,0 +1,58 @@
+:root {
+  --gray1: #323234;
+  --gray2: #202023;
+  --gray3: #1a202c; /* has more blue in it */
+
+  --white1: #ededed;
+  --white2: #f6f0e8;
+  --white3: #f0e7db;
+  --white4: #aca7a3;
+
+  /* dark */
+  --green: #b3ecbb;
+  --darker-green: #6ea275;
+  --green-trans: rgba(7, 163, 132, 0.4);
+  --blue: #6fd5bc;
+  --darker-blue: #009ec8;
+
+  /* ligh */
+  --dark-orange: #c0564a;
+  --darker-orange: #79332b;
+  --orange-trans: rgba(253, 138, 123, 0.2);
+  --purple: #a45f98;
+  --darker-purple: #3f4f6f;
+
+  /* theme */
+  --light-theme: #ffde82;
+  --light-theme-secondary: #bb9655;
+  --dark-theme: #9990d0;
+  --dark-theme-secondary: #6e5ba0;
+}
+
+.dark {
+  --bg: var(--gray2);
+  --bg-lighter: var(--gray1);
+  --bg-trans: var(--green-trans);
+  --text: var(--white1);
+  --text-secondary: var(--white4);
+  --primary: var(--green);
+  --primary-darker: var(--darker-green);
+  --accent: var(--blue);
+  --accent-darker: var(--darker-blue);
+  --theme-color: var(--light-theme);
+  --theme-color-secondary: var(--light-theme-secondary);
+}
+
+.light {
+  --bg: var(--white3);
+  --bg-lighter: var(--white2);
+  --bg-trans: var(--orange-trans);
+  --text: var(--gray3);
+  --text-secondary: var(--gray1);
+  --primary: var(--dark-orange);
+  --primary-darker: var(--darker-orange);
+  --accent: var(--purple);
+  --accent-darker: var(--darker-purple);
+  --theme-color: var(--dark-theme);
+  --theme-color-secondary: var(--dark-theme-secondary);
+}
