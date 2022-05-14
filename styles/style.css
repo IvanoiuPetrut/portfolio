@@ -187,6 +187,19 @@ body {
   width: auto;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.sticky .hero {
+  margin-top: 16.4rem;
+}
+
 /* NAV */
 
 .nav__list {
