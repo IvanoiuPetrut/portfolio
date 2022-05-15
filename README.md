@@ -3,8 +3,7 @@
 A web page to show my projects and my skills.
 
 <p align="center">
-  <img src="https://i.ibb.co/1J264mv/git-paint-1.png" alt="Photo of the presentation of the project" width="417"/>
-  <img src="https://i.ibb.co/kQwNGFH/git-paint-2.png" alt="Photo of the presentation of the project" width="417"/>
+  <img src="https://repository-images.githubusercontent.com/490637252/9c8785f5-2e4b-48a3-9de9-8f2f928edbb2" alt="Photo of the presentation of the project"/>
 </p>
 
 <br>
