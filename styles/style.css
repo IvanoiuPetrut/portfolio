@@ -6,7 +6,6 @@
   align-items: center;
   padding: 0.8rem 11.2rem;
   margin-bottom: 11.2rem;
-
   background-color: var(--bg-lighter);
 }
 
@@ -152,12 +151,6 @@
   margin-bottom: 0.6rem;
 }
 
-/* work secondary heading */
-
-.skills .secondary--heading::before {
-  background-color: var(--bg);
-}
-
 .sub-title {
   font-size: 2rem;
   font-weight: 400;
@@ -184,6 +177,12 @@
 }
 
 /* SKILLSA SECTION */
+
+/* work secondary heading */
+
+.skills .secondary--heading::before {
+  background-color: var(--bg);
+}
 
 .skills {
   padding: 12.8rem 6.4rem;
@@ -254,6 +253,10 @@
 
 .skills__list li {
   margin-bottom: 0.4rem;
+}
+
+.skills__list li:last-child {
+  margin-bottom: 0;
 }
 
 /* WORKS */
