@@ -6,7 +6,7 @@
   align-items: center;
   padding: 0.8rem 11.2rem;
   margin-bottom: 11.2rem;
-  background-color: var(--bg-lighter);
+  background-color: var(--bg--lighter);
 }
 
 .logo {
@@ -66,7 +66,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: var(--bg-trans);
+  background-color: var(--bg--trans);
   border-radius: 9px;
   transition: all 0.3s ease-in-out;
 }
@@ -84,7 +84,7 @@
 
 .lnk--header:hover,
 .lnk--header:active {
-  color: var(--accent-darker);
+  color: var(--accent--darker);
 }
 
 /* THEME BUTTON */
@@ -92,7 +92,7 @@
 .icon--theme {
   width: 2rem;
   height: 2rem;
-  color: var(--bg-lighter);
+  color: var(--bg--lighter);
 }
 
 .light .icon--theme[name="sunny"] {
@@ -121,7 +121,7 @@
 
 .btn--nav:hover,
 .btn--nav:active {
-  background-color: var(--theme-color-secondary);
+  background-color: var(--theme-color--secondary);
 }
 
 /* MAIN */
@@ -160,7 +160,7 @@
 .hero__description {
   font-size: 2rem;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--text--secondary);
   width: 70%;
   margin-bottom: 3.2rem;
 }
@@ -186,7 +186,7 @@
 
 .skills {
   padding: 12.8rem 6.4rem;
-  background-color: var(--bg-lighter);
+  background-color: var(--bg--lighter);
 }
 
 .skills__content {
@@ -246,7 +246,7 @@
 }
 
 .skills__list {
-  color: var(--text-secondary);
+  color: var(--text--secondary);
   font-size: 2rem;
   text-align: center;
 }
@@ -287,7 +287,7 @@
 }
 
 .work__text {
-  color: var(--text-secondary);
+  color: var(--text--secondary);
   font-size: 2rem;
   margin-bottom: 1.6rem;
 }
@@ -316,7 +316,7 @@
 
 .footer {
   padding-top: 16rem;
-  border-top: 2px solid var(--bg-lighter);
+  border-top: 2px solid var(--bg--lighter);
 }
 
 .footer__header {
@@ -390,8 +390,8 @@
   font-size: 1.2rem;
   letter-spacing: 0.5px;
   text-align: center;
-  background-color: var(--bg-lighter);
-  color: var(--text-secondary);
+  background-color: var(--bg--lighter);
+  color: var(--text--secondary);
   width: 100%;
   padding: 0.8rem 0;
 
