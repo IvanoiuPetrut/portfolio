@@ -16,7 +16,7 @@
 
 .light .logo,
 .light .footer__logo {
-  content: url("../resources/logo-light.png");
+  content: url("../resources/logo-light.webp");
 }
 
 .sticky .header {
