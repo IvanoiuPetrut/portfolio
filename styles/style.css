@@ -139,11 +139,6 @@
   place-items: center;
 }
 
-.hero__img img {
-  width: 100%;
-  display: none;
-}
-
 .hero__tittle {
   display: inline-block;
   font-size: 2.5rem;
