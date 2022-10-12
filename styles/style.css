@@ -215,6 +215,16 @@
   margin-bottom: 2rem;
 }
 
+.btn__group {
+  display: flex;
+}
+
+.icon--work {
+  width: 3.2rem;
+  height: 3.2rem;
+  /* color: var(--accent); */
+}
+
 /* change img for light theme */
 
 .light .skills__item:nth-child(1) img {
@@ -289,6 +299,12 @@
 
 .lnk--full:link,
 .lnk--full:visited {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  /* make it so it doesent take the full width */
+  width: fit-content;
+
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--bg);
