@@ -87,6 +87,11 @@
     align-items: center;
   }
 
+  .hero__img {
+    height: 90%;
+    width: 40%;
+  }
+
   .primary--heading {
     text-align: center;
   }
@@ -94,10 +99,6 @@
   .hero__description {
     width: 70%;
     text-align: center;
-  }
-
-  .hero__img {
-    width: 50%;
   }
 
   .margin-btm--big {
