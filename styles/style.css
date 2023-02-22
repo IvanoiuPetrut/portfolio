@@ -297,6 +297,23 @@
   margin-bottom: 1.6rem;
 }
 
+.work__technologies {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+  color: var(--text--secondary);
+  margin-bottom: 3.2rem;
+}
+
+.work__technologies li {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9px;
+  background-color: var(--bg--trans);
+  color: var(--primary);
+}
+
 .lnk--full:link,
 .lnk--full:visited {
   display: flex;
