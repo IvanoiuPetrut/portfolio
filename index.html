@@ -97,12 +97,23 @@
           </div>
 
           <div class="hero__img">
-            <img
-              src="./resources/photo_of_me.webp"
-              alt="Photo of Petrut Ivanoiu"
-              width="200"
-              class="hero__img--photo"
-            />
+            <picture>
+              <source
+                srcset="./resources/photo_of_me.webp"
+                type="image/webp"
+                class="hero__img--photo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="./resources/photo_of_me.jpg"
+                alt="Photo of Petrut Ivanoiu"
+                width="200"
+                class="hero__img--photo"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <div class="hero__img--backdrop"></div>
           </div>
         </div>
@@ -182,7 +193,7 @@
                   the next 3 days and see hourly weather for the next 24 hours.
                 </p>
                 <ul class="work__technologies">
-                  <li>Vue 3</li>
+                  <li>Vue</li>
                   <li>Vuex</li>
                   <li>Axios</li>
                   <li>SASS</li>
@@ -223,7 +234,7 @@
                   Database API to get the data.
                 </p>
                 <ul class="work__technologies">
-                  <li>Vue 3</li>
+                  <li>Vue</li>
                   <li>Pinia</li>
                   <li>Axios</li>
                   <li>SASS</li>
