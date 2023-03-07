@@ -1,4 +1,4 @@
-# Portofolio
+# Portfolio
 
 A web page to show my projects and my skills.
 
