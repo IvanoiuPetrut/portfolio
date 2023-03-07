@@ -1,3 +1,12 @@
+// BLOB ANIMATION
+
+const tween = KUTE.fromTo(
+  "#blob1",
+  { path: "#blob1" },
+  { path: "#blob2" },
+  { repeat: 999, duration: 3000, yoyo: true }
+).start();
+
 //  THEME TOGGLE
 
 const themeButton = document.getElementById("theme-btn");
@@ -19,7 +28,6 @@ const sectionHeroEl = document.querySelector(".hero");
 const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
     if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
     }
