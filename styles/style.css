@@ -9,6 +9,32 @@
   background-color: var(--bg--lighter);
 }
 
+.my-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 9px;
+  transition: all 0.4s ease-in-out, color 0.3s ease-in-out;
+}
+
+.my-logo:hover {
+  background-color: var(--bg);
+}
+
+.my-logo > .circle {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.my-logo > p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
 .logo {
   height: 3.2rem;
   width: auto;
@@ -393,6 +419,10 @@
 .footer__row-1 {
   place-self: end;
   width: 60%;
+}
+
+.blob {
+  fill: var(--primary);
 }
 
 .footer__row-1 img,
