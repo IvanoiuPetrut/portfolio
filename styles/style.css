@@ -382,6 +382,20 @@
   color: var(--primary);
 }
 
+/* MORE PROJECTS */
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+}
+
 /* FOOTER */
 
 .footer {
