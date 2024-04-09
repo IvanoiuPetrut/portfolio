@@ -105,6 +105,36 @@
     margin-bottom: 10.4rem;
   }
 
+  .portfolio-item {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .portfolio-item__title {
+    display: block;
+    margin-inline: auto;
+    width: fit-content;
+  }
+
+  .portfolio-item .work__text {
+    text-align: center;
+  }
+
+  .portfolio-item .work__technologies,
+  .portfolio-item .btn__group {
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .portfolio-wrapper {
+    gap: 12.8rem;
+  }
+
+  .portfolio-item__image {
+    width: 70%;
+    margin-inline: auto;
+  }
+
   .footer {
     padding-top: 10.4rem;
   }
@@ -228,6 +258,10 @@
 
   .skills__item:nth-child(3) {
     width: 50%;
+  }
+
+  .portfolio-item__image {
+    width: 100%;
   }
 
   .footer__subtitle {

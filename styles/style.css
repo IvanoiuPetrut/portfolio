@@ -80,7 +80,6 @@
 
 .lnk--nav:hover,
 .lnk--nav:active {
-  /* box-shadow: inset 100px 0 0 0 var(--green-trans); */
   color: var(--primary);
 }
 
@@ -383,6 +382,20 @@
   color: var(--primary);
 }
 
+/* MORE PROJECTS */
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+}
+
 /* FOOTER */
 
 .footer {
@@ -457,6 +470,16 @@
 .icon--footer {
   vertical-align: middle;
   margin-right: 0.8rem;
+}
+
+.work__see-more:link,
+.work__see-more:visited {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.6rem;
+  font-size: 2.4rem;
+  grid-column: span 2;
 }
 
 /* coppyright */
