@@ -211,8 +211,6 @@
   left: 7%;
   z-index: -1;
 }
-//create a after element taht is bigger than the image
-
 /* SKILLSA SECTION */
 
 /* work secondary heading */
@@ -259,6 +257,9 @@
 
 .btn__group {
   display: flex;
+  flex-wrap: wrap;
+  /* add vertical gap */
+  gap: 1.2rem;
 }
 
 .icon--work {
