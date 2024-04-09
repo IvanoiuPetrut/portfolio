@@ -9,6 +9,10 @@
   background-color: var(--bg--lighter);
 }
 
+.header--second-page {
+  margin-bottom: 4.8rem;
+}
+
 .my-logo {
   display: flex;
   align-items: center;
@@ -211,8 +215,6 @@
   left: 7%;
   z-index: -1;
 }
-//create a after element taht is bigger than the image
-
 /* SKILLSA SECTION */
 
 /* work secondary heading */
@@ -259,6 +261,9 @@
 
 .btn__group {
   display: flex;
+  flex-wrap: wrap;
+  /* add vertical gap */
+  gap: 1.2rem;
 }
 
 .icon--work {
@@ -480,6 +485,16 @@
   margin-top: 1.6rem;
   font-size: 2.4rem;
   grid-column: span 2;
+}
+
+.work__go-back:link,
+.work__go-back:visited {
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 /* coppyright */

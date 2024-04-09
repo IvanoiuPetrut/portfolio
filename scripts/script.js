@@ -16,9 +16,26 @@ themeButton.addEventListener("click", function () {
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
     body.classList.add("light");
+    localStorage.setItem("theme", "light");
   } else {
     body.classList.remove("light");
     body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  const theme = localStorage.getItem("theme");
+  if (theme === "dark") {
+    document.body.classList.add("dark");
+  }
+
+  if (theme === "light") {
+    document.body.classList.add("light");
+  }
+
+  if (theme === undefined) {
+    document.body.classList.add("dark");
   }
 });
 

@@ -22,25 +22,28 @@
     <link rel="stylesheet" href="styles/queries.css" />
     <title>Ivanoiu Petrut | More Projects</title>
   </head>
-  <body class="dark">
-    <header class="header">
+  <body>
+    <header class="header header--second-page">
       <!-- LOGO -->
-      <a href="#" class="lnk my-logo">
+      <a href="/index.html" class="lnk my-logo">
         <div aria-hidden="true" class="circle"></div>
-        <p>Petrut Ivanoiu</p>
+        <p>
+          <span class="my-logo__first-name">Petrut</span>
+          <span class="my-logo__second-name">Ivanoiu</span>
+        </p>
       </a>
 
       <!-- NAVIGATION -->
       <nav class="nav">
         <ul class="list nav__list">
           <li class="nav__item">
-            <a href="index.html#skills" class="lnk lnk--nav">Skills</a>
+            <a href="#skills" class="lnk lnk--nav">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="index.html#work" class="lnk lnk--nav">Portfolio</a>
+            <a href="#work" class="lnk lnk--nav">Portfolio</a>
           </li>
           <li class="nav__item">
-            <a href="index.html#contact" class="lnk lnk--nav">Contact</a>
+            <a href="#footer" class="lnk lnk--nav">Contact</a>
           </li>
           <li class="nav__item">
             <button id="theme-btn" class="btn btn--nav">
@@ -86,7 +89,11 @@
                 class="lnk lnk--full lnk--full-animation"
                 rel="noopener"
                 target="_blank"
-                ><ion-icon name="caret-forward-outline"></ion-icon> Live</a
+                ><ion-icon
+                  class="icon--work"
+                  name="caret-forward-outline"
+                ></ion-icon>
+                Live</a
               >
               <a
                 href="https://github.com/IvanoiuPetrut/Omni-Food"
@@ -130,7 +137,11 @@
                 class="lnk lnk--full lnk--full-animation"
                 rel="noopener"
                 target="_blank"
-                ><ion-icon name="caret-forward-outline"></ion-icon> Live</a
+                ><ion-icon
+                  class="icon--work"
+                  name="caret-forward-outline"
+                ></ion-icon>
+                Live</a
               >
               <a
                 href="https://github.com/IvanoiuPetrut/snap-find-remote-work/"
@@ -152,7 +163,7 @@
               Audio-video Processing
             </h3>
             <img
-              src="resources/works/work_snap.webp"
+              src="resources/works/work_audio-video.webp"
               alt="Porto"
               width="400"
               class="portfolio-item__image"
@@ -173,6 +184,14 @@
             </ul>
             <div class="btn__group">
               <a
+                href="https://www.youtube.com/watch?v=2WkaNH3bdeQ"
+                class="lnk lnk--full lnk--full-animation"
+                rel="noopener"
+                target="_blank"
+                ><ion-icon class="icon--work" name="videocam"></ion-icon>
+                Demo</a
+              >
+              <a
                 href="https://github.com/IvanoiuPetrut/audio-video-processing"
                 class="lnk lnk--full lnk--full-animation"
                 rel="noopener"
@@ -192,7 +211,7 @@
               Paint clone
             </h3>
             <img
-              src="resources/works/work_snap.webp"
+              src="resources/works/work_paint-clone.webp"
               alt="Porto"
               width="400"
               class="portfolio-item__image"
@@ -209,6 +228,14 @@
             </ul>
             <div class="btn__group">
               <a
+                href="https://www.youtube.com/watch?v=l9zgRJr-77I"
+                class="lnk lnk--full lnk--full-animation"
+                rel="noopener"
+                target="_blank"
+                ><ion-icon class="icon--work" name="videocam"></ion-icon>
+                Demo</a
+              >
+              <a
                 href="https://github.com/IvanoiuPetrut/Paint-Clone"
                 class="lnk lnk--full lnk--full-animation"
                 rel="noopener"
@@ -218,6 +245,15 @@
               >
             </div>
           </div>
+        </div>
+        <div>
+          <a
+            href="more-projects.html"
+            class="lnk lnk--header lnk--underline-animation work__go-back"
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+            <span> Go back </span>
+          </a>
         </div>
       </section>
 
