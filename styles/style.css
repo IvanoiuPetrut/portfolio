@@ -9,6 +9,10 @@
   background-color: var(--bg--lighter);
 }
 
+.header--second-page {
+  margin-bottom: 4.8rem;
+}
+
 .my-logo {
   display: flex;
   align-items: center;
@@ -473,6 +477,10 @@
   margin-right: 0.8rem;
 }
 
+.see-more__wrapper {
+  grid-column: span 2;
+}
+
 .work__see-more:link,
 .work__see-more:visited {
   display: flex;
@@ -480,7 +488,16 @@
   gap: 1rem;
   margin-top: 1.6rem;
   font-size: 2.4rem;
-  grid-column: span 2;
+}
+
+.work__go-back:link,
+.work__go-back:visited {
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 /* coppyright */

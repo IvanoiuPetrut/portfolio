@@ -155,6 +155,10 @@
 /* BELLOW 670PX */
 
 @media (max-width: 42em) {
+  .my-logo__second-name {
+    display: none;
+  }
+
   .hero {
     padding: 0 0;
   }
@@ -213,6 +217,10 @@
 
   .work__text {
     text-align: center;
+  }
+
+  .btn__group {
+    justify-content: center;
   }
 
   .inverse-order {
@@ -291,6 +299,10 @@
 @media (max-width: 27em) {
   .nav__list {
     gap: 0.8rem;
+  }
+
+  .my-logo__first-name {
+    display: none;
   }
 
   .sub-title--first-paragraph::after {
