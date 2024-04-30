@@ -177,6 +177,10 @@
     width: 100%;
   }
 
+  .hero__ctas {
+    justify-content: center;
+  }
+
   .skills__content {
     grid-template-columns: repeat(2, 1fr);
   }

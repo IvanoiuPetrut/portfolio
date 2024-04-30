@@ -47,18 +47,21 @@ body {
   width: 100%;
 }
 
-.lnk--full-animation:link::before,
-.lnk--full-animation:visited::before {
-  z-index: -1;
+.lnk--full-animation {
+  position: relative;
+  display: inline-block; /* Ensure the link behaves like a block element */
+}
+
+.lnk--full-animation::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 100%;
   background-color: var(--bg--trans);
   border-radius: 7px;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out; /* Only transition width */
 }
 
 .lnk--full-animation:hover::before,

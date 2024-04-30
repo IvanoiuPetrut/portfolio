@@ -215,6 +215,12 @@
   left: 7%;
   z-index: -1;
 }
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
 /* SKILLSA SECTION */
 
 /* work secondary heading */
@@ -384,6 +390,18 @@
 .lnk--full:hover,
 .lnk--full:active {
   background-color: transparent;
+  color: var(--primary);
+}
+
+.lnk--secondary:link,
+.lnk--secondary:visited {
+  background-color: var(--bg--lighter);
+  color: var(--text--secondary);
+}
+
+.lnk--secondary:hover,
+.lnk--secondary:active {
+  background-color: var(--bg--lighter--darker);
   color: var(--primary);
 }
 
